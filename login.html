@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>degin login page</title>
+    <link rel="stylesheet" href="sravan.css">
+</head>
+<body>
+    <div class="container">
+        <div class="details">
+        
+        <div  id="smail "> <h1>E-MAIL:</h1><br>
+            
+           <input type="text" id="email" placeholder="enter your mail id">
+        </div>
+        <br>
+         
+            <div  id="password "> <h1>PASSWORD:</h1><br>
+            <input type="password" placeholder="enter your password id">
+             </div>
+             <br>
+             <br>
+            
+        
+
+        <button id="login" onclick="logged()"><h1>LOG IN</h1></button>
+        <br>
+        <div id="hello" style="font: size 600px;"></div>
+        <br>
+        <div class="signup"><a href="#">create New account</a>
+            &nbsp;
+            &nbsp;
+            <span> <a href="#" class="new_user">new user-?</a></span>
+        </div>
+    </div>
+    <script>
+        let newElement=document.getElementById('email');
+        let lastElement=document.getElementById('hello');
+        function logged(){
+            let inputvalue=newElement.value;
+            let updatevalue=`Hi ${inputvalue}!,Welcome you are been verifying.........  `;
+            lastElement.textContent=updatevalue;
+        }
+
+
+
+
+    </script>
+
+    </div>
+</body>
+</html>
