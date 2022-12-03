@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    background-color: skyblue;
+}
+.container{
+    background: url();
+    background-color: blanchedalmond;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20%;
+    margin-left: 40%;
+    padding: 100px 100px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px 5px;
+    padding: 20px 20px;
+    
+}
+input{
+    padding: 10px 50px;
+    border-radius: 25px;
+}
+button{
+    border-radius: 25px;
+    background-color: gray;
+}
+.hello{
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    font-size: 500rem;
+    background-color: purple;
+}
+.signup a{
+    text-decoration: none;
+    color: black;
+    background-color: green;
+    
+    border: 1px solid red;
+    border-radius: 25px;
+    padding: 5px 10px;
+
+    
+}
+a.new_user{
+    background-color: sienna;
+}
+
+
+
+
+
