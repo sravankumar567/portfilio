@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Converter</title>
+    <style>
+        body{
+            background: url("https://assets.ccbp.in/frontend/dynamic-webapps/time-converter-bg.png");
+
+        }
+     .container{
+        display: flex;
+        
+        flex-direction: column;
+        padding: 30px 40px;
+        margin-left: 10%;
+        margin-top: 60px;
+        font-family: sans-serif;
+        
+
+     }
+     .Hourssec{
+        font-size: 3.1rem;
+        font-weight: 400;
+        color: azure;
+        display: flex;
+        flex-direction: column;
+        
+     }
+     #hours{
+        margin-right: 70%;
+        padding: 20px 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+     }
+     .minutessec{
+        font-size: 3.1rem;
+        font-weight: 400;
+        color: azure;
+        display: flex;
+        flex-direction: column;
+        
+     }
+     #minutes{
+        margin-right: 70%;
+        padding: 20px 0;
+        margin-bottom: 30px;
+        margin-top: 30px;
+
+     }
+     .btnsec{
+        display: flex;
+        flex-direction: column;
+        margin-right: 80%;
+    
+
+     }
+     
+     #convert{
+        padding: 15px;
+        border: 1px solid red;
+        border-radius: 15px;
+     }
+     
+     #result{
+        margin-top: 20px;
+        color: white;
+        padding: 30px;
+        border: 2px solid white;
+        
+        
+     }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class=" container">
+        <div class="Hourssec">
+            <label for="hours">Enter the hours</label>
+            <input type="text" id="hours">
+        </div>
+        <div class="minutessec">
+            <label for="minutes">Enter the minutes</label>
+            <input type="text" id="minutes">
+        </div>
+        <div class="btnsec">
+            <button id="convert" onclick="change()">convert to seconds</button>
+           
+            <h1 id="result"></h1>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <script>
+        let hoursEl=document.getElementById("hours");
+        let minutes=document.getElementById("minutes");
+        let btn=document.getElementById('convert');
+        let result=document.getElementById("result")
+        var Hours=parseInt(hoursEl.value);
+        var Minutes=parseInt(minutes.value);
+        var seconds = (Hours * 60 + Minutes) * 60;
+        function change(){
+           if(isNaN(Hours)){
+            alert("please enter valid input");
+           }
+           else{
+            result.textContent=seconds;
+           }
+
+            
+            
+
+        }
+        change()
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
